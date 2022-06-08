@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/juego.css">
+    <title>BlackJack</title>
+</head>
+<body>
+    <header class="titulo">
+        Black Jack Oscar
+    </header>
+    <div class="row mt-2">
+        <div id="botones" class="col text-center">
+            <button id="btnNuevo" class="btn btn-danger">Nuevo juego</button>
+            <button id="btnPedir" disabled="disabled" class="btn btn-primary">Pedir Carta</button>
+            <button id="btnDetener" disabled="disabled" class="btn btn-warning">Detener</button>
+        </div>
+    </div>
+    <div class="row container">
+        <div class="col">
+            <h1>Jugador1 <small id="puntosPlayer">-0</small></h1>
+            <div  class="divCartas">
+                <!-- <img class="carta" src="assets/cartas/10C.png" alt="">
+                <img class="carta" src="assets/cartas/10C.png" alt="">
+                <img class="carta" src="assets/cartas/10C.png" alt="">
+                <img class="carta" src="assets/cartas/10C.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+    <div class="row container mt-2">
+        <div class="col">
+            <h1>computadora <small id='puntosMachine'>-0</small></h1>
+            <div class="divCartas">
+                <!-- <img class="carta" src="assets/cartas/3C.png" alt="">
+                <img class="carta" src="assets/cartas/3C.png" alt="">
+                <img class="carta" src="assets/cartas/3C.png" alt="">
+                <img class="carta" src="assets/cartas/3C.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/underscore.js"></script>
+    <script src="assets/js/juego.min.js"></script>
+    <script>
+        console.log(miModulo);
+        document.querySelector('#btnNuevo').addEventListener('click',()=>{
+            miModulo.nuevoJuego();
+        })
+    </script>
+</body>
+</html>

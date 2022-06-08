@@ -1,0 +1,63 @@
+body{
+    
+    background:lightgoldenrodyellow;
+    /* background:linear-gradient(rgb(48, 177, 138),rgb(124, 206, 102),rgb(209, 166, 96)); */
+    /* background-repeat: no-repeat; */
+
+}
+@font-face{
+    font-family:dimitri;
+    src: url(../fonts/dimitri/DIMITRI_.TTF);
+}
+#titulo{
+
+    font-family: dimitri;
+    color:rgb(17, 17, 17);
+    font-size: 2em;
+    text-align: center;
+     text-shadow: 2px 2px 2px #838181;
+     margin-bottom: 20px;
+        
+
+}
+nav{
+    position: absolute;
+    top: 50px;
+    border:2px solid black ;
+    border-radius:5px;
+    background-color: #30B18B; 
+    height: 50px;
+    width: 1000px;
+    margin-left: 142px;
+    box-shadow:5px 5px 10px rgb(114, 113, 113);
+
+}
+nav ul li{
+
+    display: inline-block;
+    list-style: none;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: azure;
+    text-transform: uppercase;
+    font-family: dimitri;
+    color: rgb(17, 17, 17);
+    
+}
+code{
+    position:absolute;
+    top:150px;
+    left:150px ;
+    border:2px solid azure;
+    background: #000;
+    height: 200px;
+    width: 400px;
+    text-align: left;
+    color: #30B18B;
+    overflow-y: scroll;
+    border-radius: 5px;
+
+}
+    
